@@ -1,0 +1,237 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+   background: #dcdcd1;
+   overflow: hidden;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 1fr 25% 25%;
+  grid-template-rows: 70px 200px 100px 150px;
+  gap: 10px;
+  padding: 10px 10px;
+  background-color: #ffffff;
+  border: 10px solid black;
+  overflow: hidden;
+  max-width: 1000px;
+  margin: 60px auto;
+  border-radius: 20px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+  background: #dcdcd1;
+}
+
+/* ✅ MAIN GRID CONTAINER */
+main{
+  display: grid;
+  grid-template-columns: 1fr 25% 25%;
+  grid-template-rows: 70px 200px 100px 150px;
+
+  gap: 12px;
+  padding: 15px;
+
+  max-width: 1000px;
+  margin: 50px auto;
+
+  background: #fff;
+  border: 8px solid #111;
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+/* ✅ NAVBAR */
+.nav{
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px 14px;
+}
+#nav-home i{
+    font-size: 13px;
+     border: 1px solid #bdbdbd;
+  border-radius: 999px;
+  padding: 5px
+}
+/* ✅ Left part: all pills in one line */
+.nav-left{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ✅ Common pill style */
+.pill{
+  display: flex;
+  align-items: center;
+   
+    
+  gap: 10px;
+
+  border: 1px solid #bdbdbd;
+  border-radius: 999px;
+  padding: 6px 10px;
+
+  background: #fff;
+}
+
+/* ✅ All text in navbar */
+.nav h4{
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+/* ✅ 100+ black badge */
+.badge{
+  background: #111;
+  color: white;
+  border-radius: 999px;
+  padding: 6px 12px;
+}
+
+/* ✅ Active Premium black pill (same like badge but longer) */
+.active-premium{
+  background: #111;
+  color: white;
+  border-radius: 999px;
+  padding: 6px 14px;
+ margin-right: 500px;
+}
+#spacer{
+  display: flex;
+  align-items: center;
+     
+     width: 500px; /* fixed pill width */
+}
+
+
+/* ✅ Menu pill */
+.nav-right{
+    display: flex;
+    align-items: center;
+  border: 1px solid #bdbdbd;
+  border-radius: 999px;
+  padding: 2px 12px;
+  background: #fff;
+}
+.nav-right i{
+    font-size: 10px;
+     border: 1px solid #bdbdbd;
+  border-radius: 999px;
+  padding: 3px
+
+}
+
+/* ✅ Cards (for testing) */
+.top-left{
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  background: aqua;
+  border-radius: 18px;
+}
+
+.top-right1{
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background: orange;
+  border-radius: 18px;
+}
+
+.top-right2{
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  background: pink;
+  border-radius: 18px;
+}
+
+.bottom-left{
+  grid-column: 1 / 2;
+  grid-row: 3 / 5;
+  background: rgb(219, 9, 44);
+  border-radius: 18px;
+}
+
+.bottom-left2{
+  grid-column: 2 / 4;
+  grid-row: 3 / 4;
+  background: aqua;
+  border-radius: 18px;
+}
+
+.bottom-right1{
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+  background: chocolate;
+  border-radius: 18px;
+}
+
+.bottom-right2{
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
+  background: magenta;
+  border-radius: 18px;
+}
+
+
+
+.top-left{
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  background-color: aqua;
+}
+
+.top-right1{
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background: orange;
+}
+
+.top-right2{
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  background: pink;
+}
+.bottom-left{
+    grid-column: 1 / 2;
+  grid-row: 3 / 5;
+  background: rgb(219, 9, 44);
+}
+.bottom-left2{
+    grid-column: 2/4;
+    grid-row: 3/4;
+    background-color: aqua;
+}
+.bottom-right1{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    background-color: chocolate;
+}
+.bottom-right2{
+    grid-column: 3/4;
+    grid-row: 4/5;
+    background-color: magenta;
+}
