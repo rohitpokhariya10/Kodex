@@ -1,0 +1,147 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html,
+body {
+height: 100%;
+width: 100%;
+}
+@font-face {
+    font-family:manrope ;
+    src: url(./fonts/Manrope-VariableFont_wght.woff2);
+}
+main{
+  min-height: 100vh;
+  width: 100%;
+  background: #000;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 150px 1fr;
+}
+.wrapper{
+    height: 100%;
+    width: 100%; 
+}
+.nav-bar{
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  background-color: yellow;
+  display: grid; /* ✅ add this */
+  grid-template-columns: 1fr 3fr 1fr; /* ✅ same split */
+  align-items: center;
+}
+.page1{
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  place-items: center; /* ✅ best */
+}
+
+.sheryians-logo{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-left: 60px;
+}
+
+.logo-text h3{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.logo-text p{
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* Center menu */
+.nav-icons{
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.nav-icons a{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+/* Right profile */
+.my-profile{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  padding-right: 60px;
+}
+.page1-top-text{
+  grid-column: 2 / 3;  /* ✅ center column */
+  text-align: center;
+  color: white;
+  display: grid;
+  gap: 18px;
+}
+.page1-top-text h3{
+  color: orange;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.page1-top-text h1{
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+.page1-top-text h1 span{
+  border: 1px solid orange;
+  padding: 5px 15px;
+}
+
+.page1-top-text h2{
+  font-size: 18px;
+  font-weight: 400;
+  opacity: 0.7;
+}
+.users{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.avatars{
+  display: flex;
+}
+
+.avatars img{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  margin-left: -10px;
+  border: 2px solid black;
+}
+
+.users h5{
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.users h5 span{
+  color: orange;
+  font-weight: 600;
+}
+.page1-btn button{
+  padding: 14px 35px;
+  border: none;
+  border-radius: 12px;
+  background: orange;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
